@@ -16,6 +16,14 @@ const User = new mongoose.Schema({
   timestamp: {
     type: Date,
     default: Date.now
+  },
+  nonce: {
+    type: String,
+    default: null
+  },
+  passwordResetTime: {
+    type: Date,
+    default: null
   }
 })
 
